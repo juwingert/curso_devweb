@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<style>
+    body{
+        background-color: mediumaquamarine;
+        
+    }
+    img{
+        width: 500px;
+    }
+</style>
+</head>
+    
+    
+<body> 
+    <h1> Exemplo para inserir uma imagem</h1>
+
+    <img src="source/img/imagem1.jpeg" alt="imagem de um peixe azul">
+
+    <h2>Inserindo imagem com o 'figure'</h2>
+        <figure>
+            <img src="source/img/imagem1.jpeg" alt="imagem de um peixe azul">
+            <img src="source/img/imagem2.jpeg" alt="imagem de um peixe amarelo">
+            <figcaption>Peixes das Maldivas</figcaption>
+        </figure>
+        <picture>
+            <source media="(min-width: 800px)" srcset="source/img/imagem1.jpeg">
+            <source media="(min-width: 650px)" srcset="source/img/imagem2.jpeg">
+            <source media="(min-width: 300px)" srcset="source/img/imagem3.jpeg">
+            <img src="source/img/imagem3.jpeg" alt="criança olhando peixes no aquário">
+        </picture>
+        
+    
+</body>
+</html>
