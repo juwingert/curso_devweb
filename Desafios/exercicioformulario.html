@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro na Amazon</title>
+
+    <img src="../source/img/amazonlogo.png" alt="logo da Amazon">
+
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        form{
+            padding: 40px;
+            border-style: inset;
+            color: black;
+            width: 250px;
+            background-color: white;
+            
+        }
+
+        #Continuar{
+            background-color: orange;
+        }
+
+        .form-container{
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    
+    <div class="form-container">
+    <form>
+        <h1 style="text-align: center;">Criar conta</h1>
+        <label for="nomeusuario">Seu Nome</label><br>
+        <input type="text" name="nomeusuario" placeholder="Nome e Sobrenome">
+        <br>
+        <br>
+        <label for="emailusuario">Número de celular ou Email</label><br>
+        <input type="text" name="emailusuario">
+        <br>
+        <br>
+        <label for="senhausuario">Senha</label><br>
+        <input type="password" name="senhausuario" placeholder="Pelo menos 6 caracteres">
+        <figcaption style="font-size: 10px;"> As senhas devem ter pelo menos 6 caracteres.</figcaption>
+        <br>
+        
+        <label for="senhausuario">Insira a senha nova mais uma vez</label><br>
+        <input type="password" name="senhausuario">
+        <br>
+
+        <input type="submit" value="Continuar" id="Continuar">
+        <br>
+        <br>
+        <p style="font-size: 12px;">Ao criar uma conta, você concorda com as <a href="https://www.amazon.com.br/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&nodeId=201283910" target="_blank">Condições de Uso da Amazon.</a> Por favor verifique a <a href="https://www.amazon.com.br/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&nodeId=201283950" target="_blank">Notificação de Privacidade,</a> 
+        </a> Por favor verifique a <a href="https://www.amazon.com.br/gp/help/customer/display.html/?nodeId=201890250" target="_blank">Notificação de Cookies,</a> e a <a href="https://www.amazon.com.br/gp/help/customer/display.html?nodeId=201283970" target="_blank">Notificação de Anúncios Baseados em Interesse.</a></p>
+
+    </form>
+    </div>
+    
+</body>
+</html>
