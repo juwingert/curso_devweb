@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro na Amazon</title>
 
-    <img src="../source/img/amazonlogo.png" alt="logo da Amazon">
-
+   
     <style>
         body{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -28,21 +27,36 @@
 
         .form-container{
             width: 100vw;
-            height: 90vh;
+            margin-top: 30px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+        }
+        .img-container{
+            width: 100vw;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-container img {
+            height: 60px;
         }
 
     </style>
 
 </head>
 <body>
-    
+    <div class="img-container">
+    <img src="../source/img/amazonlogo.png" alt="logo da Amazon">
+    </div>
     
     <div class="form-container">
+        
     <form>
+        
         <h1 style="text-align: center;">Criar conta</h1>
         <label for="nomeusuario">Seu Nome</label><br>
         <input type="text" name="nomeusuario" placeholder="Nome e Sobrenome">
