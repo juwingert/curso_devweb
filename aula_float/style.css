@@ -1,0 +1,30 @@
+.box{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.first-box-color{
+    background-color: brown;
+    float: left;
+    
+}
+
+.second-box-color{
+    background-color: burlywood;
+    float: right;
+    
+}
+
+p{
+    background-color: cadetblue;
+}
+
+.container-box{
+    background-color: aquamarine;
+    overflow: hidden;
+}
