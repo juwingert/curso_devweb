@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pai{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    position: fixed;
+}
+
+.filho{
+    width: 100px;
+    height: 100px;
+    background-color: aqua; 
+}
