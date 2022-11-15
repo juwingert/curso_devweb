@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
 
+    text-decoration: none;
+
 }
 
 body{
     height: 100vh;
     width: 100vw;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
 
     /*posicionamento dos itens*/
 
@@ -27,6 +30,7 @@ body{
     justify-content: flex-end;
     font-weight: 400;
     padding-right: 20px;
+    font-size: 13px;
     
 }
 
@@ -64,9 +68,8 @@ svg{
 
 svg:hover{
     background-color: rgba(200, 200, 200, 0.3);
-   
-
 }
+
 
 /* FIM DO HEADER */
 
@@ -76,11 +79,16 @@ svg:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.main-content > img {
+    margin-bottom: 40px;
 }
 
 .input-text{
     height: 40px;
-    width: 30vw;
+    width: 20vw;
     margin-left: 40px;
     outline: none;
     border: transparent;
@@ -92,11 +100,11 @@ svg:hover{
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 50px;
-    width: 35vw;
+    width: 32vw;
 }
 
 .input-search:hover{
-    box-shadow: 5px 5px 30px #5f6368;
+    box-shadow: 1px 1px 10px #a6a9ac;
     transition: ease-in 0.1s;
 }
 
@@ -138,9 +146,74 @@ svg:hover{
     border-radius: 0%;
     margin-left: 10px;
     background-color: rgb(243, 240, 240);
-    
+ 
+}
+
+.main-btn:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #8b8a8a;
+    transition: ease-in 0.1s;
 }
 
 .footer-content{
     height: 94px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: arial,sans-serif;
 }
+
+.fr-left-content{
+    border-bottom: 1px solid #dadce0;
+    width: 100vw;
+    height: 50%;
+    font-size: 15px;
+    color: #70757a;
+    display: flex;
+    align-items: center;
+}
+.fr-left-content > span {
+    padding: 0 30px;
+}
+
+.second-row{
+    display: flex;
+    justify-content: space-between;
+    color: #70757a;
+    width: 100vw;
+    height: 50%;
+    align-items: center;
+}
+
+.sr-left-content{
+    justify-content:space-between;
+    padding: 0 30px;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.sr-left-content > a {
+    margin-right: 30px;
+}
+
+.sr-left-content > a:visited {
+    color: #70757a;
+}
+
+.sr-right-content{
+    justify-content:space-between;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+.sr-right-content > a {
+    margin-left: 30px;
+}
+
+.sr-right-content > a:visited {
+    color: #70757a;
+}
+
+
+
