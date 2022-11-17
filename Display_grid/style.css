@@ -1,0 +1,89 @@
+/*ELEMENTO PAI:
+-RECEBE DISPLAY GRID
+-GRID TAMPLATE-COLUMN: REPRESENTA A QUANT DE COLUNAS QUE NOSSA PÁG. TERÁ
+-GRID TAMPLATE-ROW: REPRESENTA A QUANT DE LINHAS QUE NOSSA PÁG. TERÁ
+ 
+ELEMENTOS FILHOS (ITEM):
+ -GRID-COLUMN: VAI DEFINIR A COLUNA DE INÍCIO E A COLUNA DE TÉRMINO DO MEU ITEM
+ -GRID-ROW: DEFINE A LINHA DE INÍCIO E O FIM DO MEU ITEM
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    background-color: crimson;
+
+    /* ALTURA E LARGURA */
+    width: 100%;
+    height: 100vh;
+
+    /* PROPRIEDADES DO GRID, define o layout */
+    grid-template-columns: 1fr 3fr; /* defini 2 colunas */
+    grid-template-rows: 20vh 70vh 10vh; /* defini 3 linhas */
+    
+}
+
+header{
+    background-color: yellow;
+
+    grid-column: 1/3; /* começa na coluna 1 e termina na coluna 3 */
+    grid-row: 1/2; /* começa na linha 1 e termina na linha 2, são 4 linhas */
+}
+
+main{
+    background-color: blue;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+aside{
+    background-color: dimgray;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+footer{
+    height: 100px;
+    background-color: darkolivegreen;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+
+/* CSS DO INDEX2 */
+
+.container2{
+    display: grid;
+    background-color: crimson;
+    width: 100%;
+    height: 100vh;
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h" "a m" "f f";
+ 
+}
+
+.header{
+    background-color: aqua;
+    grid-area: h;
+}
+
+.main{
+    background-color: violet;
+    grid-area: m;
+}
+
+.aside{
+    background-color: teal;
+    grid-area: a;
+}
+
+.footer{
+    background-color: darkslateblue;
+    grid-area: f;
+}

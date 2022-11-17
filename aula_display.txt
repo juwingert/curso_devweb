@@ -1,0 +1,4 @@
+Display
+
+FLEX - 1 dimensão (trabalha com linhas e colunas juntas)
+GRID - 2 dimensões (trabalhar separadamente com linha e colunas), usa esse pra montar nosso layout
