@@ -11,15 +11,15 @@
     height: 100vh;
 
     /* PROPRIEDADES DO GRID, define o layout */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* defini 2 colunas */
-    grid-template-rows:1fr 1fr 1fr 1fr; /* defini 3 linhas */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows:1fr 1fr 1fr 1fr; 
     gap: 20px;
     
 }
 
 .type1{
-    grid-column: 1/3; /* começa na coluna 1 e termina na coluna 3 */
-    grid-row: 1/2; /* começa na linha 1 e termina na linha 2, são 4 linhas */
+    grid-column: 1/3; 
+    grid-row: 1/2; 
 }
 
 .type2{
