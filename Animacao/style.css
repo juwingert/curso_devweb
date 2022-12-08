@@ -1,0 +1,119 @@
+body{
+    background-color: aliceblue;
+}
+
+.caixa{
+    width: 250px;
+    height: 250px;
+
+}
+
+.exemplo1{
+
+    background-color: aliceblue;
+    position: relative;
+}
+
+.exemplo1:before{
+    content: '';
+    position: absolute;
+    background-color: indigo;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    transition: right .4s ease-in;
+}
+
+.exemplo1:hover:before{
+    right: 25%;
+}
+
+.exemplo2{
+    margin-top: 20px;
+    position: relative;
+    background-color: darkgoldenrod;
+}
+
+.exemplo2:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+    transition: top .7s ease-out;
+}
+
+
+.exemplo2:hover:before{
+    top: 75%;
+}
+
+
+.espaco{
+    margin-top: 20px;
+}
+
+.botao{
+    background-color: black;
+    width: 200px;
+    padding: 20px;
+    color: wheat;
+    border: none;
+    outline: none;
+    transition: transform .5s ease-out;
+}
+
+.botao:hover{
+    transform: scale(1.5);
+}
+
+.loading{
+    border: 5px solid steelblue;
+    border-radius: 50%;
+    border-bottom: none;
+    animation: rodar 1s infinite;
+}
+
+@keyframes rodar {
+    to{
+        transform: rotate(360deg);
+    }
+    from{
+        transform: rotate(0deg);
+    }
+}
+
+.pai{
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.filho{
+    position: absolute;
+    background-color: blueviolet;
+    transition: transform .2s;
+}
+
+.filha{
+    position: absolute;
+    background-color: aquamarine;
+    transition: transform .2s;
+}
+
+.pai:hover .filho{
+    transform: translateY(40px);
+}
+
+.pai:hover .filha{
+    transform: translateY(10px);
+}
+
+.medias{
+    position: absolute;
+    bottom: 0;
+}
