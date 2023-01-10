@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caixa {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 50px auto;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid gray;
+            text-align: center;
+        }
+
+        .alerta{
+            padding: 5px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        .sucesso{
+            padding: 5px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <button onclick="falha()">Falha</button>
+    <button onclick="sucess()">Sucesso</button>
+
+    <script>
+        
+        function falha() {
+            let novoElemento = document.createElement('p')
+
+        novoElemento.className = 'alerta'
+        novoElemento.innerText = 'Esta é uma mensagem de alerta'
+
+        let el = document.querySelector('div')
+        el.appendChild(novoElemento)
+        }
+
+        function sucesso() {
+            let novoElemento = document.createElement('p')
+
+            novoElemento.className = 'sucess'
+            novoElemento.innerText = 'Esta é uma mensagem de sucesso'
+
+            let el = document.querySelector('div')
+         el.appendChild(novoElemento)
+        }
+
+    </script>
+
+
+</body>
+</html>
