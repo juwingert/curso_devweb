@@ -60,29 +60,29 @@ let cachorro = document.querySelector('div')
 
 // })
 
-// cachorro.addEventListener('mousemove', (ev) => {
-//     let el = document.createElement('div')
+cachorro.addEventListener('mousemove', (ev) => {
+    let el = document.createElement('div')
 
-//     el.className = 'elemento'
+    el.className = 'elemento'
 
-//     el.style.top = ev.pageY1
+    el.style.top = ev.pageY + 'px'
 
-//     el.style.left = ev.pageX
+    el.style.left = ev.pageX + 'px'
 
-//     ev.target.appendChild(el)
+    ev.target.appendChild(el)
 
-// })
-
-let texto = document.querySelector('#texto')
-
-texto.addEventListener('keydown', (e) => {
-    console.log(e.key)
-
-    console.log(e.code)
-
-    if(e.code == "F1"){
-        e.preventDefault()
-    }
-
-    console.log(e.keyCode)
 })
+
+// let texto = document.querySelector('#texto')
+
+// texto.addEventListener('keydown', (e) => {
+//     console.log(e.key)
+
+//     console.log(e.code)
+
+//     if(e.code == "F1"){
+//         e.preventDefault()
+//     }
+
+//     console.log(e.keyCode)
+// })
